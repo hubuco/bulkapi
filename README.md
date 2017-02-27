@@ -1,5 +1,5 @@
 # HuBuCo's Bulk API
-Our bulk API is suitable to clean your database programatically and can be used to verify Millions of emails on a daily basis, including reselling.
+Our bulk API is suitable to clean your database programatically and can be used to verify Millions of emails on a daily basis, including reselling, without manually exporting your database, uploading into HuBuCo, downloading results, uploading into your system. :-)
 
 # Send a TXT or CSV file to HuBuCo
 Using send-file.php you can send a csv or txt file to HuBuCo programtically. 
