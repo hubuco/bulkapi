@@ -17,7 +17,7 @@ You can keep checking the progress of your file using get-results.php
 
 You will need: 
 - your HuBuCo API key
-- file_id returned by send-file.php
+- $file_id returned by send-file.php
 
 Results:
 - $file_id => the file id of the uploaded file
@@ -27,7 +27,7 @@ Results:
 - $uploaded_emails => number emails uploaded into HuBuCo's system after deduplication
 - $verified_emails => number of emails already verified
 
-Once verification is completed the following links are available, you can use these links to donload results. Results are available for 2 months
+Once verification is completed the following links are available, you can use these links to download results. Results are available for 2 months
 - $url_ok => link to download ok emails
 - $url_ok_and_catch_all => link to download ok and catch all emails
 - $url_all => link to download full report
