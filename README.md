@@ -12,7 +12,7 @@ As a result you will be returned a variable: $file_id
 
 Save this $file_id, as it will be used for retreiving the results
 
-# Check progress of uploded file
+# Check progress of uploded file, and download
 You can keep checking the progress of your file using get-results.php
 
 You will need: 
@@ -20,14 +20,14 @@ You will need:
 - file_id returned by send-file.php
 
 Results:
-$file_id => the file id of the uploaded file
-$filename => file name
-$date_uploaded => unix timestamp of the file uploaded to HuBuCo
-$status => file process status; options: waiting, parsing, pre_verifying, pre_verifying_completed, verifying_in_progress, completed, error_in_file
-$uploaded_emails => number emails uploaded into HuBuCo's system after deduplication
-$verified_emails => number of emails already verified
+- $file_id => the file id of the uploaded file
+- $filename => file name
+- $date_uploaded => unix timestamp of the file uploaded to HuBuCo
+- $status => file process status; options: waiting, parsing, pre_verifying, pre_verifying_completed, verifying_in_progress, completed, error_in_file
+- $uploaded_emails => number emails uploaded into HuBuCo's system after deduplication
+- $verified_emails => number of emails already verified
 
 Once verification is completed the following links are available, you can use these links to donload results. Results are available for 2 months
-$url_ok => link to download ok emails
-$url_ok_and_catch_all => link to download ok and catch all emails
-$url_all => link to download full report
+- $url_ok => link to download ok emails
+- $url_ok_and_catch_all => link to download ok and catch all emails
+- $url_all => link to download full report
