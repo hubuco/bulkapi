@@ -5,7 +5,7 @@
   $file_name = ''; // TXT or CSV files are accepted
   $file_name_with_full_path = ''; // absolute path to your file you want to upload. Eg. '/var/www/vhosts/domain.com/upload/'.$file_name
   
-  $target_url = 'https://www.hubuco.com/bulkapi/upload/'; // HuBuCo upload API url, do not change
+  $target_url = 'https://bulkapi.hubuco.com/bulkapi/upload/'; // HuBuCo upload API url, do not change
 
   if (function_exists('curl_file_create'))
   { // php 5.6+
