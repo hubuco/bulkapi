@@ -7,7 +7,7 @@
   $curl = curl_init();
   curl_setopt_array($curl, array(
     CURLOPT_RETURNTRANSFER => 1,
-    CURLOPT_URL => 'https://www.hubuco.com/bulkapi/progress/?api_key='.$api_key.'&file_id='.$file_id
+    CURLOPT_URL => 'https://bulkapi.hubuco.com/bulkapi/progress/?api_key='.$api_key.'&file_id='.$file_id
   ));
 
   $resp = curl_exec($curl);
@@ -21,13 +21,13 @@
   if($status == 'completed')
   {
     // download ok emails
-    $url_ok = 'https://www.hubuco.com/download/results/'.$file_id.'/1/'.$api_key;
+    $url_ok = 'https://bulkapi.hubuco.com/download/results/'.$file_id.'/1/'.$api_key;
 
     // download ok and catch all emails
-    $url_ok_and_catch_all = 'https://www.hubuco.com/download/results/'.$file_id.'/2/'.$api_key;
+    $url_ok_and_catch_all = 'https://bulkapi.hubuco.com/download/results/'.$file_id.'/2/'.$api_key;
 
     // download all emails
-    $url_all = 'https://www.hubuco.com/download/results/'.$file_id.'/3/'.$api_key;
+    $url_all = 'https://bulkapi.hubuco.com/download/results/'.$file_id.'/3/'.$api_key;
   }
 
 
@@ -56,12 +56,12 @@
   please replace file_id and api key accordingly
 
   OK ONLY:
-  https://www.hubuco.com/download/results/<file_id>/1/<api_key>/
+  https://bulkapi.hubuco.com/download/results/<file_id>/1/<api_key>/
 
   OK + CATCH ALL:
-  https://www.hubuco.com/download/results/<file_id>/2/<api_key>/
+  https://bulkapi.hubuco.com/download/results/<file_id>/2/<api_key>/
 
   FULL REPORT:
-  https://www.hubuco.com/download/results/<file_id>/3/<api_key>/
+  https://bulkapi.hubuco.com/download/results/<file_id>/3/<api_key>/
   */ 
 ?>
